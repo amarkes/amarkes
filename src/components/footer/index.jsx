@@ -16,7 +16,7 @@ const tabs = [
 export default function FooterComponent({ openTab, activeTab }) {
   const { theme } = useContext(ThemeContext);
   return (
-    <footer className={`${theme === 'dark' ? 'bg-zinc-900' : 'bg-gray-200'} flex justify-around p-2 h-[60px]`}>
+    <footer className={`${theme === 'dark' ? 'bg-zinc-900' : 'bg-gray-200'} flex justify-around p-2 h-[60px] pb-safe-bottom`}>
       {tabs.map((tab) => (
         <button
           key={tab.id}

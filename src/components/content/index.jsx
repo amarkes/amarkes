@@ -30,18 +30,12 @@ const ContentComponent = () => {
   };
 
   useEffect(() => {
-    // Detectar se é um dispositivo móvel com base na largura da tela
     const checkIfMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
 
-    // Checar inicialmente
     checkIfMobile();
-
-    // Adicionar evento de redimensionamento para atualizar conforme necessário
     window.addEventListener('resize', checkIfMobile);
-
-    // Limpar o evento ao desmontar
     return () => window.removeEventListener('resize', checkIfMobile);
   }, []);
 
@@ -51,26 +45,12 @@ const ContentComponent = () => {
     }
   }, [activeTab]);
 
-  useEffect(() => {
-    // Desabilitar o scroll do body se estiver em um dispositivo móvel
-    if (isMobile) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-
-    // Restaurar o scroll do body ao desmontar
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, [isMobile]);
-
   return (
-    <div className={`flex justify-center items-center h-screen ${theme === 'dark' ? 'bg-gray-900' : 'bg-gray-100'} font-sans`}>
-      <div className={`${isMobile ? 'h-[100vh]' : 'w-[390px] h-[85vh] rounded-2xl'} ${theme === 'dark' ? 'bg-gray-500' : 'bg-black'} p-1 shadow-md flex justify-center items-center`}>
-        <div className={`w-full ${isMobile ? 'h-full' : 'w-[385px] h-[80vh]'} ${theme === 'dark' ? 'bg-gray-900' : 'bg-white'} ${isMobile ? '' : 'rounded-lg'} shadow-md overflow-hidden text-center relative flex flex-col`}>
+    <div className={`${isMobile ? 'justify-center items-start' : 'justify-center items-center'} flex h-screen ${theme === 'dark' ? 'bg-gray-900' : 'bg-gray-100'} font-sans`}>
+      <div className={`${isMobile ? 'h-full' : 'w-[390px] h-[85vh] rounded-2xl'} ${theme === 'dark' ? 'bg-gray-500' : 'bg-black'} p-1 shadow-md flex justify-center items-center`}>
+        <div className={`w-full ${isMobile ? 'h-full' : 'h-[83vh]'} ${theme === 'dark' ? 'bg-gray-900' : 'bg-white'} ${isMobile ? '' : 'rounded-lg'} shadow-md overflow-hidden text-center relative flex flex-col`}>
           <HeaderComponent />
-          <div ref={contentRef} className="flex-1 overflow-y-auto">
+          <div ref={contentRef} className="flex-1 overflow-y-auto pb-16">
             {tabContent[activeTab]}
           </div>
           <FooterComponent openTab={openTab} activeTab={activeTab} />
