@@ -2,7 +2,7 @@
 
 import React, {useContext} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faBriefcase, faGraduationCap, faCogs, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faBriefcase, faGraduationCap, faCogs, faProjectDiagram, faAddressBook } from '@fortawesome/free-solid-svg-icons';
 import { ThemeContext } from '@/contexts/theme/themeContext';
 
 const tabs = [
@@ -11,6 +11,7 @@ const tabs = [
   { id: 'formacao', label: 'Formação', icon: faGraduationCap },
   { id: 'habilidades', label: 'Habilidades', icon: faCogs },
   { id: 'projetos', label: 'Projetos', icon: faProjectDiagram },
+  { id: 'contact', label: 'Contato', icon: faAddressBook },
 ];
 
 export default function FooterComponent({ openTab, activeTab }) {

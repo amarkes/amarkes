@@ -10,6 +10,7 @@ import TrainingPage from '@/pages/training';
 import SkillsPage from '@/pages/skills';
 import ProfilePage from '@/pages/profile';
 import ProjectsPage from '@/pages/projects';
+import ContactPage from '@/pages/contact';
 
 const tabContent = {
   perfil: <ProfilePage />,
@@ -17,6 +18,7 @@ const tabContent = {
   formacao: <TrainingPage />,
   habilidades: <SkillsPage />,
   projetos: <ProjectsPage />,
+  contact: <ContactPage />,
 };
 
 const ContentComponent = () => {
