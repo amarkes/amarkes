@@ -62,7 +62,7 @@ const ContentComponent = () => {
             </div>
             <div className="bg-gray-200 text-black flex flex-col h-full w-full items-start p-4">
               <p className="text-lg">
-                <FontAwesomeIcon icon={faPhone} size="sm" className="text-gray-400" /> +55 61 99191 1174
+                
               </p>
               <p className="text-lg mt-2">
                 <FontAwesomeIcon icon={faEnvelope} size="sm" className="text-gray-400" /> amarkes.aws@gmail.com
