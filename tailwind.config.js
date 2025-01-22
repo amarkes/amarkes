@@ -9,6 +9,13 @@ export default {
       spacing: {
         'safe-bottom': 'env(safe-area-inset-bottom)',
       },
+      colors: {
+        'bg-custom-one': '#474645',
+        'bg-custom-two': '#4f4f4f',
+        'color-l': '#FFA500',
+        'color-a': '#FFFF00',
+        'color-vl': '#32CD32',
+      },
     },
   },
   plugins: [],
