@@ -1,5 +1,5 @@
 .container {
-    @apply pr-5 w-full h-full md:h-screen flex flex-col pl-10 items-start justify-start pt-20 text-gray-300 inset-0 relative bg-no-repeat bg-cover overflow-auto;
+    @apply pr-5 w-full md:h-screen flex flex-col pl-10 items-start justify-start pt-20 text-gray-300 inset-0 relative bg-no-repeat bg-cover overflow-auto;
 }
 .description {
     @apply max-w-[800px] relative z-10 mt-5 mb-5;
