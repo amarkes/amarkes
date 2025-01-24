@@ -1,5 +1,5 @@
 .container {
-    @apply w-full h-screen flex flex-col pl-10 items-start justify-center text-gray-300 inset-0 relative;
+    @apply w-full h-screen flex flex-col pl-10 items-start justify-center text-gray-300 inset-0 relative bg-no-repeat bg-cover;
 }
 .home {
     @apply text-left mb-5;

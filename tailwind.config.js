@@ -15,6 +15,7 @@ export default {
         'color-l': '#FFA500',
         'color-a': '#FFFF00',
         'color-vl': '#32CD32',
+        'color-gray': '#aaaaaa',
       },
     },
   },

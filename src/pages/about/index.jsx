@@ -9,10 +9,14 @@ const AboutPage = () => {
         backgroundImage: `url(${ImageBG})`,
       }}>
       <div className={styles.shadow}></div>
+      <div className="flex flex-col relative mb-20">
+        <h2 className="text-gray-300 text-5xl font-semibold tracking-wide uppercase">
+          PERFIL
+        </h2>
+        <div className="w-14 h-1 bg-orange-500 mt-1"></div>
+      </div>
       <div className={styles.description}>
-        <p className={styles.text}>
-          PERFIL PROFISSIONAL
-        </p>
+
         <div className={styles.devide}></div>
         <p className={styles.text}>
           Sou um desenvolvedor full stack movido pela paixão de criar

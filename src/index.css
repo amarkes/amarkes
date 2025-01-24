@@ -2,3 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes progress-swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.animate-swing {
+    animation: progress-swing 3s infinite ease-in-out;
+}

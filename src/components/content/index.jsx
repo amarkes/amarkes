@@ -8,6 +8,10 @@ import viteLogo from '@/assets/vite.svg';
 import HomePage from '@/pages/home/index';
 import AboutPage from '@/pages/about/index';
 import CoursePage from '@/pages/course/index';
+import ExperiencePage from '@/pages/experience/index';
+import SchoolPage from '@/pages/school/index';
+import SkillPage from '@/pages/skill/index';
+import ContactPage from '@/pages/contact/index';
 
 
 const ContentComponent = () => {
@@ -32,14 +36,13 @@ const ContentComponent = () => {
         </div>
 
         <nav className={styles.nav}>
-          <a href="#" onClick={() => scrollToPage(0)} className={styles.navMenu}>HOME</a>
-          <a href="#" onClick={() => scrollToPage(1)} className={styles.navMenu}>PERFIL</a>
-          <a href="#" onClick={() => scrollToPage(2)} className={styles.navMenu}>CURSOS</a>
-          <a href="#" onClick={() => scrollToPage(3)} className={styles.navMenu}>EXPERIÊNCIA</a>
-          <a href="#" onClick={() => scrollToPage(4)} className={styles.navMenu}>FORMAÇÃO</a>
-          <a href="#" onClick={() => scrollToPage(5)} className={styles.navMenu}>SKILL</a>
-          <a href="#" onClick={() => scrollToPage(6)} className={styles.navMenu}>PROJETOS</a>
-          <a href="#" onClick={() => scrollToPage(7)} className={styles.navMenu}>CONTATO</a>
+          <a href="#" onClick={() => scrollToPage(0)} className={currentPage === 0 ? styles.navMenu2 : styles.navMenu}>HOME</a>
+          <a href="#" onClick={() => scrollToPage(1)} className={currentPage === 1 ? styles.navMenu2 : styles.navMenu}>PERFIL</a>
+          <a href="#" onClick={() => scrollToPage(2)} className={currentPage === 2 ? styles.navMenu2 : styles.navMenu}>SKILL</a>
+          <a href="#" onClick={() => scrollToPage(3)} className={currentPage === 3 ? styles.navMenu2 : styles.navMenu}>EXPERIÊNCIA</a>
+          <a href="#" onClick={() => scrollToPage(4)} className={currentPage === 4 ? styles.navMenu2 : styles.navMenu}>FORMAÇÃO</a>
+          <a href="#" onClick={() => scrollToPage(5)} className={currentPage === 5 ? styles.navMenu2 : styles.navMenu}>CURSOS</a>
+          <a href="#" onClick={() => scrollToPage(6)} className={currentPage === 6 ? styles.navMenu2 : styles.navMenu}>CONTATO</a>
         </nav>
 
 
@@ -67,32 +70,27 @@ const ContentComponent = () => {
 
           {/* Página 3 */}
           <section className={styles.sectionPage}>
-            <CoursePage />
+          <SkillPage />
           </section>
 
           {/* Página 4 */}
           <section className={styles.sectionPage2}>
-            <h1 className="text-3xl font-bold">EXPERIENCE</h1>
+            <ExperiencePage />
           </section>
 
           {/* Página 5 */}
           <section className={styles.sectionPage}>
-            <h1 className="text-3xl font-bold">EDUCATION</h1>
+            <SchoolPage />  
           </section>
 
           {/* Página 6 */}
           <section className={styles.sectionPage2}>
-            <h1 className="text-3xl font-bold">PORTFOLIO</h1>
+            <CoursePage />
           </section>
 
           {/* Página 7 */}
-          <section className={styles.sectionPage}>
-            <h1 className="text-3xl font-bold">CONTACT</h1>
-          </section>
-
-          {/* Página 8 */}
           <section className={styles.sectionPage3}>
-            <h1 className="text-3xl font-bold">CONTACT</h1>
+            <ContactPage />
           </section>
         </div>
       </div>
