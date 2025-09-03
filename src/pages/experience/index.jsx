@@ -16,9 +16,17 @@ const ExperiencePage = () => {
       </div>
       <div className={styles.description}>
         <div>
+          <p><b>Smartfit - Engenheiro de software senior</b></p>
+
+          <p><b>Período: 03/2025 - Atual</b></p>
+
+          <p>- Manutenção dos apps dos studios.</p>
+
+          <br />
+
           <p><b>Angulare – Desenvolvedor Sênior</b></p>
 
-          <p><b>Período: 07/2017 - Atual</b></p>
+          <p><b>Período: 07/2017 - 03/2025</b></p>
 
           <p>-  Criação de sistemas e aplicativos personalizados para academias, com mais de 29 apps publicados na Apple Store e Google Play.</p>
 

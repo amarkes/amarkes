@@ -116,6 +116,11 @@ const SkillPage = () => {
 
             <div className="flex items-center">
               <span className="text-color-gray mr-2">&#10003;</span>
+              <span>Supabase</span>
+            </div>
+
+            <div className="flex items-center">
+              <span className="text-color-gray mr-2">&#10003;</span>
               <span>PostgreSQL</span>
             </div>
 

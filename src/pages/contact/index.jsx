@@ -25,14 +25,6 @@ const ContactPage = () => {
             </div>
           </div>
 
-          <div className="flex items-start mb-6">
-            <span className="text-color-gray text-2xl mr-4">&#x1F4DE;</span>
-            <div>
-              <p className="text-color-gray font-medium">Telefone</p>
-              <p className="text-color-gray">+55 61 99191-1174</p>
-            </div>
-          </div>
-
           <div className="flex items-start">
             <span className="text-color-gray text-2xl mr-4">&#x2709;&#xFE0F;</span>
             <div>
