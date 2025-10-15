@@ -1,12 +1,21 @@
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=000000&background=FFFFFF00&width=435&lines=Full+Stack+web+and+mobile;%2B+15+years+of+experience;Engenheiro+de+Software+Senior)](https://git.io/typing-svg)
+
+--- 
+
 <img src="https://img.shields.io/static/v1?label=Overview&message=amarkes&color=f8efd4&style=for-the-badge&logo=GitHub" alt="GitHub badge">
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=amarkes" alt="amarkes" /></a> </p>
+<a href="https://github.com/ryo-ma/github-profile-trophy">
+  <img src="https://github-profile-trophy.vercel.app/?username=amarkes" alt="amarkes" />
+</a>
+
+--- 
 
 ## Olá, eu sou o Antônio Marques! 👋
 
 Sou desenvolvedor full stack com foco em construir produtos digitais completos, do backend ao mobile. Minha jornada começou no ecossistema PHP (Laravel e CodeIgniter) e hoje atuo principalmente com o universo JavaScript/TypeScript, entregando aplicações performáticas, escaláveis e com ótima experiência para o usuário. Também contribuo com a comunidade, criando soluções como a biblioteca `br-mask`, além de publicar apps nas lojas.
 
 ### 🧭 Em foco
+
 - Arquitetura de sistemas web e mobile, garantindo performance e boas práticas.
 - Criação de experiências fluidas com React, React Native, Angular e Ionic.
 - Integração de APIs, otimização de pipelines e automação com Node.js e Supabase.
@@ -17,9 +26,28 @@ Sou desenvolvedor full stack com foco em construir produtos digitais completos, 
 
 ---
 
+## Me ajude se gostou do meu trabalho
+
+<table>
+  <tr>
+    <th>$5+/month</th>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/sponsors/amarkes"><img width="120" height="120" alt="spansor" src="https://github.com/user-attachments/assets/2ceb2946-b8d4-4881-8491-765528fa2a71" /></a>
+    </td>
+  </tr>
+</table>
+
+
+<a href="https://github.com/sponsors/amarkes/"><img alt="More about my sponsorship tiers" title="Sponsorship Tiers" src="https://custom-icon-badges.demolab.com/badge/-More%20About%20My%20Sponsorship%20Tiers-1F222E?style=for-the-badge&logoColor=white&logo=link-external"/></a>
+
+--- 
+
 ## 🚀 Tech Stack
 
 ### Linguagens & Frameworks
+
 <table>
   <tr>
     <td align="center" width="120"><img src="https://github.com/user-attachments/assets/cad880d7-889c-4f2e-a75c-d4eb7a6d644b" alt="JavaScript" height="48"><br>JavaScript</td>
@@ -31,6 +59,7 @@ Sou desenvolvedor full stack com foco em construir produtos digitais completos, 
 </table>
 
 ### Front-end & UI
+
 <table>
   <tr>
     <td align="center" width="120"><img src="https://github.com/user-attachments/assets/d1f95529-230a-448a-bf36-209abd061cda" alt="React" height="48"><br>React</td>
@@ -43,6 +72,7 @@ Sou desenvolvedor full stack com foco em construir produtos digitais completos, 
 </table>
 
 ### Mobile & Cross-platform
+
 <table>
   <tr>
     <td align="center" width="120"><img src="https://github.com/user-attachments/assets/8f8d1aec-9fce-4fdb-9a0e-2fd894cb217f" alt="React Native" height="48"><br>React Native</td>
@@ -52,6 +82,7 @@ Sou desenvolvedor full stack com foco em construir produtos digitais completos, 
 </table>
 
 ### Bancos de Dados & BaaS
+
 <table>
   <tr>
     <td align="center" width="120"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/supabase/supabase-original.svg" alt="Supabase" height="48"><br><strong>Supabase</strong></td>
@@ -63,6 +94,7 @@ Sou desenvolvedor full stack com foco em construir produtos digitais completos, 
 </table>
 
 ### DevTools & Outras
+
 <table>
   <tr>
     <td align="center" width="120"><img src="https://github.com/user-attachments/assets/f79ddc5b-c63a-42af-a008-fdd747cccaf1" alt="Git" height="48"><br>Git</td>
@@ -76,6 +108,7 @@ Sou desenvolvedor full stack com foco em construir produtos digitais completos, 
 </table>
 
 ### QA & Testes
+
 <table>
   <tr>
     <td align="center" width="120"><img alt="detox" src="https://github.com/user-attachments/assets/f38b6de5-bace-40c1-a7e8-e709d9bfb130" height="48"/><strong>Detox</strong></td>
@@ -92,6 +125,14 @@ Sou desenvolvedor full stack com foco em construir produtos digitais completos, 
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=amarkes&hide=html&layout=compact&theme=dracula)](https://github.com/amarkes/github-readme-stats)
 
+<a href="https://github.com/amarkes/github-readme-activity-graph"><img alt="amarkes Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph/?username=amarkes&bg_color=1F222E&color=F8D866&line=F85D7F&point=FFFFFF&hide_border=true" /></a>
+
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=amarkes&" alt="amarkes" /></p>
 
 - [GitHub readme stats](https://github.com/amarkes/github-readme-stats)
+
+
+--- 
+
+
+<img src="https://raw.githubusercontent.com/mayhemantt/mayhemantt/Update/svg/Bottom.svg" alt="Github Stats" />
