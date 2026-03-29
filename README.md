@@ -4,9 +4,7 @@
 
 <img src="https://img.shields.io/static/v1?label=Overview&message=amarkes&color=f8efd4&style=for-the-badge&logo=GitHub" alt="GitHub badge">
 
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=amarkes" alt="amarkes" />
-</a>
+
 
 --- 
 
