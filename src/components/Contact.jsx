@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', whatsapp: '', message: '' });
@@ -9,15 +9,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
-  const [cooldown, setCooldown] = useState(0);
-
-  useEffect(() => {
-    if (cooldown <= 0) return;
-    const timer = setInterval(() => {
-      setCooldown((prev) => (prev > 0 ? prev - 1 : 0));
-    }, 1000);
-    return () => clearInterval(timer);
-  }, [cooldown]);
+  const [isCoolingDown, setIsCoolingDown] = useState(false);
 
   const validateEmail = (email) => {
     return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email.trim());
@@ -36,7 +28,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (cooldown > 0) return;
+    if (isCoolingDown) return;
     if (!formData.name || !formData.email || !formData.whatsapp || !formData.message) return;
 
     let hasError = false;
@@ -89,7 +81,8 @@ const Contact = () => {
         setEmailError('');
         setPhoneTouched(false);
         setPhoneError('');
-        setCooldown(60); // 1 minuto de cooldown anti-spam
+        setIsCoolingDown(true);
+        setTimeout(() => setIsCoolingDown(false), 60000); // 1 minuto de proteção silenciosa
         setTimeout(() => setSubmitted(false), 5000);
       } else {
         setError(true);
@@ -338,17 +331,12 @@ const Contact = () => {
               <button 
                 className="mt-1 inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-primary-container text-on-primary-container font-bold text-sm sm:text-base hover:bg-secondary-container transition-all shadow-[0_0_20px_rgba(249,115,22,0.3)] cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed" 
                 type="submit"
-                disabled={loading || cooldown > 0}
+                disabled={loading || isCoolingDown}
               >
                 {loading ? (
                   <>
                     <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
                     <span>Enviando...</span>
-                  </>
-                ) : cooldown > 0 ? (
-                  <>
-                    <span className="material-symbols-outlined text-[18px] animate-pulse">timer</span>
-                    <span>Aguarde {cooldown}s para novo envio</span>
                   </>
                 ) : (
                   <>
