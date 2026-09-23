@@ -1,0 +1,7 @@
+name = "amarkes"
+compatibility_date = "2024-09-23"
+
+# Cloudflare Workers Static Assets support
+[assets]
+directory = "./dist"
+binding = "ASSETS"

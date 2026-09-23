@@ -1,13 +1,23 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="694.000000pt" height="603.000000pt" viewBox="0 0 694.000000 603.000000"
- preserveAspectRatio="xMidYMid meet">
+import React from 'react';
 
-<g transform="translate(0.000000,603.000000) scale(0.100000,-0.100000)"
-fill="#FFFFFF" stroke="none">
-<path d="M890 4549 c-476 -814 -869 -1488 -874 -1499 -7 -15 171 -333 849
+const Logo = ({ className = 'h-9 w-auto', theme = 'dark' }) => {
+  const fillColor = theme === 'dark' ? '#FFFFFF' : '#f97316';
+
+  return (
+    <svg 
+      version="1.0" 
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 694 603"
+      preserveAspectRatio="xMidYMid meet"
+      className={className}
+    >
+      <g 
+        transform="translate(0.000000,603.000000) scale(0.100000,-0.100000)"
+        fill={fillColor} 
+        stroke="none"
+        className="transition-colors duration-300"
+      >
+        <path d="M890 4549 c-476 -814 -869 -1488 -874 -1499 -7 -15 171 -333 849
 -1523 l857 -1504 1676 -7 c923 -4 1702 -9 1732 -11 l55 -5 865 1480 c476 815
 869 1489 874 1500 7 15 -167 327 -849 1523 l-857 1505 -1596 6 c-878 3 -1658
 8 -1732 11 l-135 5 -865 -1481z m958 405 c128 -42 122 -34 122 -179 0 -69 -2
@@ -29,8 +39,12 @@ l22 44 0 573 c0 554 1 576 21 635 41 122 134 229 249 287 l60 29 -63 30 c-116
 50 247 46 78 -3 119 -9 160 -25z m-1197 -1779 c295 -813 537 -1481 537 -1485
 0 -4 -75 -6 -167 -5 l-166 3 -171 472 -171 473 -625 0 -625 0 -171 -473 -170
 -472 -168 -3 c-133 -2 -167 0 -164 10 3 7 247 676 543 1486 l539 1472 221 0
-222 0 536 -1478z"/>
-<path d="M3202 3607 c-144 -397 -262 -725 -262 -729 0 -10 1060 -10 1060 0 0
-14 -524 1452 -529 1452 -3 0 -124 -325 -269 -723z"/>
-</g>
-</svg>
+222 0 536 -1478z" />
+        <path d="M3202 3607 c-144 -397 -262 -725 -262 -729 0 -10 1060 -10 1060 0 0
+14 -524 1452 -529 1452 -3 0 -124 -325 -269 -723z" />
+      </g>
+    </svg>
+  );
+};
+
+export default Logo;
