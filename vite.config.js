@@ -3,13 +3,13 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command }) => ({
+export default defineConfig({
   plugins: [react()],
-  // Use root '/' for Cloudflare or dev, and '/amarkes/' for GitHub Pages builds
-  base: process.env.CF_PAGES || process.env.CF_WORKER ? '/' : (command === 'build' ? '/amarkes/' : '/'),
+  // Relative base allows the site to work seamlessly on custom domains (amarkes.dev), Cloudflare, and GitHub Pages subpaths
+  base: './',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
   },
-}));
+});
