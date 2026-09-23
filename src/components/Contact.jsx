@@ -52,25 +52,17 @@ const Contact = () => {
     setEmailError('');
     setPhoneError('');
 
-    const token = import.meta.env.VITE_TELEGRAM_TOKEN || '7862323928:AAHC4GzugsCpbaxDlSkqrLXbKBf3HmyZGfI';
-    const chatId = import.meta.env.VITE_TELEGRAM_CHAT_ID || '281235630';
-
-    const messageText = 
-      `🚀 <b>Novo contato recebido do Portfólio!</b>\n\n` +
-      `👤 <b>Nome:</b> ${formData.name}\n` +
-      `📧 <b>Email:</b> ${formData.email}\n` +
-      `📱 <b>WhatsApp:</b> ${formData.whatsapp}\n\n` +
-      `📝 <b>Mensagem:</b>\n${formData.message}\n\n` +
-      `🕒 <i>Enviado em ${new Date().toLocaleString('pt-BR')}</i>`;
+    const apiUrl = 'https://ixtidwlgrvfdvfgdwdaz.supabase.co/functions/v1/telegram-message';
 
     try {
-      const response = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          chat_id: chatId,
-          text: messageText,
-          parse_mode: 'HTML',
+          name: formData.name,
+          email: formData.email,
+          whatsapp: formData.whatsapp,
+          message: formData.message,
         }),
       });
 
@@ -177,7 +169,7 @@ const Contact = () => {
       <div className="relative rounded-3xl bg-surface-container-low p-5 sm:p-space-lg md:p-margin shadow-2xl overflow-hidden border border-border-glass">
         {/* Ambient Inner Glow */}
         <div className="absolute -top-24 -right-24 w-80 h-80 bg-primary-container/20 blur-[90px] rounded-full pointer-events-none" />
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-space-lg items-center relative z-10">
           {/* Text and Headline */}
           <div className="lg:col-span-7 flex flex-col gap-3 sm:gap-space-sm">
@@ -193,10 +185,10 @@ const Contact = () => {
 
             {/* Channels direct links */}
             <div className="flex flex-wrap items-center gap-3 pt-2 sm:pt-4">
-              <a 
-                className="flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-high transition-colors border border-border-glass text-on-surface" 
-                href="https://github.com/amarkes" 
-                rel="noopener noreferrer" 
+              <a
+                className="flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-high transition-colors border border-border-glass text-on-surface"
+                href="https://github.com/amarkes"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <span className="material-symbols-outlined text-primary text-[20px]">code</span>
@@ -206,10 +198,10 @@ const Contact = () => {
                 </div>
               </a>
 
-              <a 
-                className="flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-high transition-colors border border-border-glass text-on-surface" 
-                href="https://www.linkedin.com/in/antonio-marques-1209ab376/" 
-                rel="noopener noreferrer" 
+              <a
+                className="flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-high transition-colors border border-border-glass text-on-surface"
+                href="https://www.linkedin.com/in/antonio-marques-1209ab376/"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <span className="material-symbols-outlined text-primary text-[20px]">link</span>
@@ -234,10 +226,10 @@ const Contact = () => {
             <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
               <div className="flex flex-col gap-1">
                 <label className="font-label-sm text-xs text-text-dim">Seu Nome ou Empresa *</label>
-                <input 
-                  className="w-full px-3.5 py-2.5 rounded-xl bg-surface-base text-text-primary placeholder:text-text-dim text-sm outline-none focus:ring-1 focus:ring-primary border border-border-glass transition-all" 
-                  placeholder="Ex.: Lucas Mendes • Startup X" 
-                  required 
+                <input
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-surface-base text-text-primary placeholder:text-text-dim text-sm outline-none focus:ring-1 focus:ring-primary border border-border-glass transition-all"
+                  placeholder="Ex.: Lucas Mendes • Startup X"
+                  required
                   type="text"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -253,14 +245,13 @@ const Contact = () => {
                     </span>
                   )}
                 </div>
-                <input 
-                  className={`w-full px-3.5 py-2.5 rounded-xl bg-surface-base text-text-primary placeholder:text-text-dim text-sm outline-none transition-all border ${
-                    emailError 
-                      ? 'border-red-500/70 focus:ring-1 focus:ring-red-500' 
-                      : 'border-border-glass focus:ring-1 focus:ring-primary'
-                  }`}
-                  placeholder="seu-email@dominio.com" 
-                  required 
+                <input
+                  className={`w-full px-3.5 py-2.5 rounded-xl bg-surface-base text-text-primary placeholder:text-text-dim text-sm outline-none transition-all border ${emailError
+                    ? 'border-red-500/70 focus:ring-1 focus:ring-red-500'
+                    : 'border-border-glass focus:ring-1 focus:ring-primary'
+                    }`}
+                  placeholder="seu-email@dominio.com"
+                  required
                   type="email"
                   value={formData.email}
                   onBlur={() => {
@@ -294,13 +285,12 @@ const Contact = () => {
                     </span>
                   )}
                 </div>
-                <input 
-                  className={`w-full px-3.5 py-2.5 rounded-xl bg-surface-base text-text-primary placeholder:text-text-dim text-sm outline-none transition-all border ${
-                    phoneError 
-                      ? 'border-red-500/70 focus:ring-1 focus:ring-red-500' 
-                      : 'border-border-glass focus:ring-1 focus:ring-primary'
-                  }`}
-                  placeholder="+55 (11) 99999-9999" 
+                <input
+                  className={`w-full px-3.5 py-2.5 rounded-xl bg-surface-base text-text-primary placeholder:text-text-dim text-sm outline-none transition-all border ${phoneError
+                    ? 'border-red-500/70 focus:ring-1 focus:ring-red-500'
+                    : 'border-border-glass focus:ring-1 focus:ring-primary'
+                    }`}
+                  placeholder="+55 (11) 99999-9999"
                   required
                   type="tel"
                   value={formData.whatsapp}
@@ -318,18 +308,18 @@ const Contact = () => {
 
               <div className="flex flex-col gap-1">
                 <label className="font-label-sm text-xs text-text-dim">Objetivo do Projeto / Proposta *</label>
-                <textarea 
-                  className="w-full px-3.5 py-2.5 rounded-xl bg-surface-base text-text-primary placeholder:text-text-dim text-sm outline-none focus:ring-1 focus:ring-primary border border-border-glass transition-all resize-none" 
-                  placeholder="Fale brevemente sobre o escopo, arquitetura ou desafio pretendido..." 
-                  required 
+                <textarea
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-surface-base text-text-primary placeholder:text-text-dim text-sm outline-none focus:ring-1 focus:ring-primary border border-border-glass transition-all resize-none"
+                  placeholder="Fale brevemente sobre o escopo, arquitetura ou desafio pretendido..."
+                  required
                   rows={3}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 />
               </div>
 
-              <button 
-                className="mt-1 inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-primary-container text-on-primary-container font-bold text-sm sm:text-base hover:bg-secondary-container transition-all shadow-[0_0_20px_rgba(249,115,22,0.3)] cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed" 
+              <button
+                className="mt-1 inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-primary-container text-on-primary-container font-bold text-sm sm:text-base hover:bg-secondary-container transition-all shadow-[0_0_20px_rgba(249,115,22,0.3)] cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                 type="submit"
                 disabled={loading || isCoolingDown}
               >
