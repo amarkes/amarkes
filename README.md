@@ -109,9 +109,10 @@ Sou desenvolvedor full stack com foco em construir produtos digitais completos, 
 
 <table>
   <tr>
-    <td align="center" width="120"><img alt="detox" src="https://github.com/user-attachments/assets/f38b6de5-bace-40c1-a7e8-e709d9bfb130" height="48"/><strong>Detox</strong></td>
+    <td align="center" width="120"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/playwright/playwright-original.svg" alt="Playwright" height="48"><br>Playwright</td>
+    <td align="center" width="120"><img alt="detox" src="https://github.com/user-attachments/assets/f38b6de5-bace-40c1-a7e8-e709d9bfb130" height="48"/><br><strong>Detox</strong></td>
     <td align="center" width="120"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/appium.svg" alt="Appium" height="48"><br>Appium</td>
-    <td align="center" width="120"><img alt="appium-inspector" src="https://github.com/user-attachments/assets/be49b73c-bda0-44c3-b65d-d63b773b5899" height="48"/><strong>Appium Inspector</strong></td>
+    <td align="center" width="120"><img alt="appium-inspector" src="https://github.com/user-attachments/assets/be49b73c-bda0-44c3-b65d-d63b773b5899" height="48"/><br><strong>Appium Inspector</strong></td>
   </tr>
 </table>
 

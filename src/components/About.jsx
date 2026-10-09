@@ -57,53 +57,69 @@ const About = () => {
         </div>
       </div>
 
-      {/* 3 Pilares de Atuação */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-space-md">
-        {/* Pilar 1 */}
+      {/* Pilares de Atuação */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-space-md">
+        {/* Pilar 1: Backend & Bancos */}
         <div className="group flex flex-col gap-3 p-4 sm:p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all shadow-md border border-border-glass hover:border-border-glass-hover">
           <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
             <span className="material-symbols-outlined text-[24px] sm:text-[28px]">dns</span>
           </div>
-          <h3 className="text-lg sm:text-xl text-text-primary font-bold">Backend &amp; Arquitetura</h3>
+          <h3 className="text-lg sm:text-xl text-text-primary font-bold">Backend &amp; Bancos</h3>
           <p className="text-xs sm:text-sm text-text-muted leading-relaxed">
-            Construção de APIs RESTful de alto rendimento, microsserviços desacoplados, modelagem relacional e noSQL, caching com Redis e otimização intensiva de queries para cargas críticas.
+            Construção de APIs RESTful escaláveis com Node.js, AdonisJS e Next.js. Modelagem relacional e NoSQL em PostgreSQL, MySQL, Supabase, MongoDB, SQLite e caching com Redis.
           </p>
           <div className="flex flex-wrap gap-1.5 pt-2 mt-auto">
-            <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-primary border border-border-glass">APIs REST</span>
-            <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-text-muted border border-border-glass">Microsserviços</span>
-            <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-text-muted border border-border-glass">Scalability</span>
+            <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-primary border border-border-glass">Node.js &amp; Adonis</span>
+            <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-text-muted border border-border-glass">Postgres / MySQL</span>
+            <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-text-muted border border-border-glass">Supabase &amp; Redis</span>
           </div>
         </div>
 
-        {/* Pilar 2 */}
+        {/* Pilar 2: Frontend & Mobile */}
         <div className="group flex flex-col gap-3 p-4 sm:p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all shadow-md border border-border-glass hover:border-border-glass-hover">
           <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
             <span className="material-symbols-outlined text-[24px] sm:text-[28px]">devices</span>
           </div>
-          <h3 className="text-lg sm:text-xl text-text-primary font-bold">Frontend Moderno</h3>
+          <h3 className="text-lg sm:text-xl text-text-primary font-bold">Frontend &amp; Mobile</h3>
           <p className="text-xs sm:text-sm text-text-muted leading-relaxed">
-            Interfaces reativas impecáveis com Next.js, React e TypeScript. Componentização atômica, rigor na acessibilidade (a11y), fidelidade de design e pontuações máximas no Web Vitals.
+            Interfaces reativas impecáveis com TypeScript, React, Next.js, Angular, React Native e Expo. Fidelidade de UI/UX, acessibilidade e alta pontuação no Core Web Vitals.
           </p>
           <div className="flex flex-wrap gap-1.5 pt-2 mt-auto">
             <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-primary border border-border-glass">React &amp; Next</span>
+            <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-text-muted border border-border-glass">React Native</span>
             <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-text-muted border border-border-glass">Tailwind CSS</span>
-            <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-text-muted border border-border-glass">Core Web Vitals</span>
           </div>
         </div>
 
-        {/* Pilar 3 */}
+        {/* Pilar 3: QA & Testes Automatizados */}
+        <div className="group flex flex-col gap-3 p-4 sm:p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all shadow-md border border-border-glass hover:border-border-glass-hover">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+            <span className="material-symbols-outlined text-[24px] sm:text-[28px]">fact_check</span>
+          </div>
+          <h3 className="text-lg sm:text-xl text-text-primary font-bold">QA &amp; Automação E2E</h3>
+          <p className="text-xs sm:text-sm text-text-muted leading-relaxed">
+            Garantia de qualidade contínua e testes automatizados end-to-end com Playwright para web, Detox e Appium / Appium Inspector para aplicações móveis.
+          </p>
+          <div className="flex flex-wrap gap-1.5 pt-2 mt-auto">
+            <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-primary border border-border-glass">Playwright</span>
+            <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-text-muted border border-border-glass">Detox &amp; Appium</span>
+            <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-text-muted border border-border-glass">Testes E2E</span>
+          </div>
+        </div>
+
+        {/* Pilar 4: DevOps & Boas Práticas */}
         <div className="group flex flex-col gap-3 p-4 sm:p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all shadow-md border border-border-glass hover:border-border-glass-hover">
           <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
             <span className="material-symbols-outlined text-[24px] sm:text-[28px]">deployed_code</span>
           </div>
-          <h3 className="text-lg sm:text-xl text-text-primary font-bold">DevOps &amp; Boas Práticas</h3>
+          <h3 className="text-lg sm:text-xl text-text-primary font-bold">DevOps &amp; Qualidade</h3>
           <p className="text-xs sm:text-sm text-text-muted leading-relaxed">
-            Pipelines automatizadas com GitHub Actions, containerização padronizada com Docker, testes unitários e de integração contínua, documentação OpenAPI e Git Flow corporativo.
+            Pipelines automatizadas com GitHub Actions, containerização Docker, documentação técnica, versionamento semântico e arquitetura limpa em produção.
           </p>
           <div className="flex flex-wrap gap-1.5 pt-2 mt-auto">
-            <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-primary border border-border-glass">Docker / CI-CD</span>
-            <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-text-muted border border-border-glass">Test Coverage</span>
-            <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-text-muted border border-border-glass">AWS Infra</span>
+            <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-primary border border-border-glass">Docker</span>
+            <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-text-muted border border-border-glass">GitHub Actions</span>
+            <span className="px-2 py-0.5 rounded-lg bg-surface-subtle font-label-code text-xs text-text-muted border border-border-glass">CI / CD</span>
           </div>
         </div>
       </div>

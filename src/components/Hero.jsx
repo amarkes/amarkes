@@ -118,7 +118,7 @@ const Hero = () => {
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-space-md pt-2 sm:pt-4">
         <div className="flex flex-col gap-1 p-3.5 sm:p-space-md rounded-2xl bg-surface-container-low border border-border-glass shadow-sm">
           <div className="flex items-center justify-between">
-            <span className="text-2xl sm:text-3xl lg:text-headline-lg text-primary font-extrabold tracking-tight">+6</span>
+            <span className="text-2xl sm:text-3xl lg:text-headline-lg text-primary font-extrabold tracking-tight">+16</span>
             <span className="material-symbols-outlined text-primary text-[20px] sm:text-[26px]">terminal</span>
           </div>
           <span className="text-xs sm:text-body-sm text-text-primary font-semibold">Anos de Experiência</span>
@@ -127,7 +127,7 @@ const Hero = () => {
 
         <div className="flex flex-col gap-1 p-3.5 sm:p-space-md rounded-2xl bg-surface-container-low border border-border-glass shadow-sm">
           <div className="flex items-center justify-between">
-            <span className="text-2xl sm:text-3xl lg:text-headline-lg text-text-primary font-extrabold tracking-tight">20+</span>
+            <span className="text-2xl sm:text-3xl lg:text-headline-lg text-text-primary font-extrabold tracking-tight">+50</span>
             <span className="material-symbols-outlined text-primary text-[20px] sm:text-[26px]">rocket_launch</span>
           </div>
           <span className="text-xs sm:text-body-sm text-text-primary font-semibold">Projetos Concluídos</span>

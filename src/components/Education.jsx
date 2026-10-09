@@ -26,7 +26,7 @@ const Education = () => {
             </div>
             <div>
               <span className="font-label-sm text-[11px] text-primary uppercase font-semibold">Graduação Superior</span>
-              <h3 className="text-base sm:text-lg text-text-primary font-bold">Engenharia de Software / Ciência da Computação</h3>
+              <h3 className="text-base sm:text-lg text-text-primary font-bold">Engenharia de Software</h3>
             </div>
           </div>
           <p className="text-xs sm:text-sm text-text-muted leading-relaxed">
@@ -49,7 +49,7 @@ const Education = () => {
               <h3 className="text-base sm:text-lg text-text-primary font-bold">Especializações &amp; Cursos de Elite</h3>
             </div>
           </div>
-          
+
           <div className="flex flex-col gap-3 pt-1">
             <div className="flex items-start gap-2.5">
               <span className="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">verified_user</span>
