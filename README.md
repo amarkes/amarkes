@@ -1,12 +1,10 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=000000&background=FFFFFF00&width=435&lines=Full+Stack+web+and+mobile;%2B+15+years+of+experience;Engenheiro+de+Software+Senior)](https://git.io/typing-svg)
 
---- 
+---
 
 <img src="https://img.shields.io/static/v1?label=Overview&message=amarkes&color=f8efd4&style=for-the-badge&logo=GitHub" alt="GitHub badge">
 
-
-
---- 
+---
 
 ## Olá, eu sou o Antônio Marques! 👋
 
@@ -37,10 +35,9 @@ Sou desenvolvedor full stack com foco em construir produtos digitais completos, 
   </tr>
 </table>
 
-
 <a href="https://github.com/sponsors/amarkes/"><img alt="More about my sponsorship tiers" title="Sponsorship Tiers" src="https://custom-icon-badges.demolab.com/badge/-More%20About%20My%20Sponsorship%20Tiers-1F222E?style=for-the-badge&logoColor=white&logo=link-external"/></a>
 
---- 
+---
 
 ## 🚀 Tech Stack
 
@@ -112,7 +109,8 @@ Sou desenvolvedor full stack com foco em construir produtos digitais completos, 
     <td align="center" width="120"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/playwright/playwright-original.svg" alt="Playwright" height="48"><br>Playwright</td>
     <td align="center" width="120"><img alt="detox" src="https://github.com/user-attachments/assets/f38b6de5-bace-40c1-a7e8-e709d9bfb130" height="48"/><br><strong>Detox</strong></td>
     <td align="center" width="120"><img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/appium.svg" alt="Appium" height="48"><br>Appium</td>
-    <td align="center" width="120"><img alt="appium-inspector" src="https://github.com/user-attachments/assets/be49b73c-bda0-44c3-b65d-d63b773b5899" height="48"/><br><strong>Appium Inspector</strong></td>
+    <td align="center" width="120"><img alt="appium-inspector" src="https://github.com/user-attachments/assets/be49b73c-bda0-44c3-b65d-d63b773b5899" height="48"/><strong>Appium Inspector</strong></td>
+    <td align="center" width="120"><img height="48" alt="playwright" src="https://github.com/user-attachments/assets/affdda16-4ea9-4d86-a6bb-a81849769f78" /><strong>PlayWright</strong></td>
   </tr>
 </table>
 
@@ -130,8 +128,6 @@ Sou desenvolvedor full stack com foco em construir produtos digitais completos, 
 
 - [GitHub readme stats](https://github.com/amarkes/github-readme-stats)
 
-
---- 
-
+---
 
 <img src="https://raw.githubusercontent.com/mayhemantt/mayhemantt/Update/svg/Bottom.svg" alt="Github Stats" />
