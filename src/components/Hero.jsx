@@ -36,15 +36,15 @@ const Hero = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2 w-full sm:w-auto">
-            <a 
-              className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 rounded-xl bg-primary-container text-on-primary-container text-sm sm:text-base font-bold hover:bg-secondary-container transition-all shadow-[0_0_24px_rgba(249,115,22,0.35)]" 
+            <a
+              className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 rounded-xl bg-primary-container text-on-primary-container text-sm sm:text-base font-bold hover:bg-secondary-container transition-all shadow-[0_0_24px_rgba(249,115,22,0.35)]"
               href="#projetos"
             >
               <span>Ver Projetos &amp; Experiência</span>
               <span className="material-symbols-outlined text-[18px]">arrow_downward</span>
             </a>
-            <a 
-              className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 rounded-xl bg-surface-container-high text-on-surface hover:text-text-primary hover:bg-surface-bright transition-all shadow-sm border border-border-glass text-sm sm:text-base font-semibold" 
+            <a
+              className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 rounded-xl bg-surface-container-high text-on-surface hover:text-text-primary hover:bg-surface-bright transition-all shadow-sm border border-border-glass text-sm sm:text-base font-semibold"
               href="#contato"
             >
               <span className="material-symbols-outlined text-[18px] text-primary">download</span>
@@ -78,14 +78,14 @@ const Hero = () => {
 
             {/* Profile Avatar Frame */}
             <div className="relative rounded-xl overflow-hidden aspect-square bg-surface-container-lowest">
-              <img 
-                alt="Antonio Marques - Software Engineer" 
-                className="w-full h-full object-cover grayscale-[10%] contrast-105 hover:grayscale-0 transition-all duration-500" 
-                src={avatarImg} 
+              <img
+                alt="Antonio Marques - Software Engineer"
+                className="w-full h-full object-cover grayscale-[10%] contrast-105 hover:grayscale-0 transition-all duration-500"
+                src={avatarImg}
               />
               {/* Inset Ambient Frame Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-surface-base via-transparent to-transparent opacity-80" />
-              
+
               {/* Overlaid Status Badge */}
               <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between p-2.5 rounded-xl bg-surface-container-high/90 backdrop-blur-md shadow-md border border-border-glass">
                 <div className="flex flex-col">
@@ -103,7 +103,7 @@ const Hero = () => {
             <div className="grid grid-cols-2 gap-2 mt-3 pt-1">
               <div className="flex flex-col p-2.5 rounded-xl bg-surface-container-lowest border border-border-glass">
                 <span className="font-label-sm text-[10px] sm:text-xs text-text-dim">Especialidade</span>
-                <span className="font-body-sm text-xs sm:text-sm text-on-surface font-semibold">Backend &amp; Cloud</span>
+                <span className="font-body-sm text-xs sm:text-sm text-on-surface font-semibold">Frontend, Backend &amp; Cloud</span>
               </div>
               <div className="flex flex-col p-2.5 rounded-xl bg-surface-container-lowest border border-border-glass">
                 <span className="font-label-sm text-[10px] sm:text-xs text-text-dim">Localização</span>
